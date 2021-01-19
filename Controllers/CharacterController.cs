@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_rpg.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin,Player")]
     [ApiController]
     [Route("[controller]")]
     public class CharacterController : ControllerBase
